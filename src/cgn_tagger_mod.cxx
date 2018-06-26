@@ -178,25 +178,25 @@ void CGNTagger::fillSubSetTable(){
   cgnSubSets.insert( make_pair("betr", "conjtype" ));
   cgnSubSets.insert( make_pair("kwal", "conjtype" ));
 
-  cgnSubSets.insert( make_pair("wwtype", "hoofd" ));
-  cgnSubSets.insert( make_pair("wwtype", "hulp-of-koppel" ));
+  cgnSubSets.insert( make_pair("hoofd", "wwtype" ));
+  cgnSubSets.insert( make_pair("hulp-of-koppel", "wwtype" ));
 
 
   cgnSubSets.insert( make_pair("numtype", "onbep" ));
 
   cgnSubSets.insert( make_pair("vwtype", "refl-of-recip" ));
 
-  cgnSubSets.insert( make_pair("bwtype", "alg" ));
-  cgnSubSets.insert( make_pair("bwtype", "aanw" ));
-  cgnSubSets.insert( make_pair("bwtype", "betr" ));
-  cgnSubSets.insert( make_pair("bwtype", "vrag" ));
-  cgnSubSets.insert( make_pair("bwtype", "onbep" ));
-  cgnSubSets.insert( make_pair("bwtype", "herv" ));
-  cgnSubSets.insert( make_pair("bwtype", "neg" ));
+  cgnSubSets.insert( make_pair("alg","bwtype" ));
+  cgnSubSets.insert( make_pair("aanw","bwtype" ));
+  cgnSubSets.insert( make_pair("betr","bwtype" ));
+  cgnSubSets.insert( make_pair("vrag","bwtype" ));
+  cgnSubSets.insert( make_pair("onbep","bwtype" ));
+  cgnSubSets.insert( make_pair("herv","bwtype" ));
+  cgnSubSets.insert( make_pair("neg","bwtype" ));
 
-  cgnSubSets.insert( make_pair("status", "ellips" ));
+  cgnSubSets.insert( make_pair("ellips", "status" ));
 
-  cgnSubSets.insert( make_pair("wvorm", "part" ));
+  cgnSubSets.insert( make_pair("part","wvorm" ));
 
   cgnConstraints.insert( make_pair( "bwtype", "BW" ) );
   cgnConstraints.insert( make_pair( "wwtype", "WW" ) );

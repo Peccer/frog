@@ -161,6 +161,47 @@ void CGNTagger::fillSubSetTable(){
   cgnConstraints.insert( make_pair( "getal", "N" ) );
   cgnConstraints.insert( make_pair( "getal", "VNW" ) );
   cgnConstraints.insert( make_pair( "pvagr", "WW" ) );
+
+  //Everything below is a CGN extension for historical dutch by INT (appendix E in Tagset voor Evaluatie Nederlab)
+  cgnSubSets.insert( make_pair("met-s-of-th", "buiging" ));
+  cgnSubSets.insert( make_pair("met-t", "buiging" ));
+  cgnSubSets.insert( make_pair("met-n", "buiging" ));
+  cgnSubSets.insert( make_pair("met-r-of-re", "buiging" ));
+  cgnSubSets.insert( make_pair("met-a", "buiging" ));
+  cgnSubSets.insert( make_pair("met-nt", "buiging" ));
+  cgnSubSets.insert( make_pair("overig", "buiging" ));
+
+
+  cgnSubSets.insert( make_pair("expl", "conjtype" ));
+  cgnSubSets.insert( make_pair("verg", "conjtype" ));
+  cgnSubSets.insert( make_pair("neg", "conjtype" ));
+  cgnSubSets.insert( make_pair("betr", "conjtype" ));
+  cgnSubSets.insert( make_pair("kwal", "conjtype" ));
+
+  cgnSubSets.insert( make_pair("wwtype", "hoofd" ));
+  cgnSubSets.insert( make_pair("wwtype", "hulp-of-koppel" ));
+
+
+  cgnSubSets.insert( make_pair("numtype", "onbep" ));
+
+  cgnSubSets.insert( make_pair("vwtype", "refl-of-recip" ));
+
+  cgnSubSets.insert( make_pair("bwtype", "alg" ));
+  cgnSubSets.insert( make_pair("bwtype", "aanw" ));
+  cgnSubSets.insert( make_pair("bwtype", "betr" ));
+  cgnSubSets.insert( make_pair("bwtype", "vrag" ));
+  cgnSubSets.insert( make_pair("bwtype", "onbep" ));
+  cgnSubSets.insert( make_pair("bwtype", "herv" ));
+  cgnSubSets.insert( make_pair("bwtype", "neg" ));
+
+  cgnSubSets.insert( make_pair("status", "ellips" ));
+
+  cgnSubSets.insert( make_pair("wvorm", "part" ));
+
+  cgnConstraints.insert( make_pair( "bwtype", "BW" ) );
+  cgnConstraints.insert( make_pair( "wwtype", "WW" ) );
+
+
 }
 
 
